@@ -2,70 +2,62 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Melanie Nannetti · SERHANT.</title>
-<meta name="description" content="Buy and sell with the most-followed real estate brand in the world. Media-first marketing, institutional data, and white-glove representation for buyers and sellers.">
-<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Ison Group · New Jersey Real Estate</title>
+<meta name="description" content="The Ison Group — Ron Ison, Melanie Nannetti, Jonathan and Dora. Strategic marketing, sharp pricing and strong negotiation across Monmouth, Middlesex and surrounding counties.">
+<meta name="theme-color" content="#0A0B3F">
 
-<!-- ============================================================
-     SOCIAL SHARE PREVIEW
-     Drop a 1200x630 image at assets/img/og-cover.jpg and update
-     the URL below to your live domain before you present.
-     ============================================================ -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Melanie Nannetti · SERHANT.">
-<meta property="og:description" content="More eyes on your home. More leverage on your deal.">
+<meta property="og:title" content="The Ison Group · New Jersey Real Estate">
+<meta property="og:description" content="Sell for more. Buy with conviction. Track every step in your private client portal.">
 <meta property="og:image" content="assets/img/og-cover.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
-<!-- Reveal animations only apply when JS is available, so the page is
-     fully readable with scripting disabled. -->
 <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<!-- ============================ NAV ============================ -->
-<header class="nav" id="nav">
-  <div class="nav__inner">
-    <a class="lockup" href="#top" aria-label="SERHANT. — Melanie Nannetti, home">
-      <span class="lockup__brand">SERHANT<span class="dot">.</span></span>
-      <span class="lockup__rule" aria-hidden="true"></span>
-      <span class="lockup__name">Melanie Nannetti</span>
+<!-- ============================ HEADER ============================ -->
+<header class="hdr" id="hdr">
+  <div class="hdr__inner">
+    <a class="hdr__logo" href="#top" aria-label="The Ison Group, home">
+      <img class="on-dark-only" src="assets/img/logo-white.png" alt="The Ison Group" width="582" height="106">
+      <img class="on-light" src="assets/img/logo-navy.png" alt="" aria-hidden="true" width="582" height="106">
     </a>
 
-    <nav class="nav__links" aria-label="Primary">
-      <a href="#difference">Why SERHANT.</a>
-      <a href="#work">Sellers &amp; Buyers</a>
-      <a href="#marketing">Marketing</a>
+    <nav class="mainnav" aria-label="Primary">
+      <a href="#team">The Team</a>
+      <a href="#sell-buy">Sell</a>
+      <a href="#sell-buy" data-path="buy">Buy</a>
       <a href="#listings">Listings</a>
-      <a href="#about">About</a>
+      <a href="#areas">Areas</a>
+      <a class="nav-portal" href="clientele.html">Clientele</a>
     </nav>
 
-    <a class="btn btn--sm nav__cta" href="#contact">Let's Talk</a>
+    <a class="btn btn--sm hdr__cta" href="#contact">Get in touch</a>
 
-    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-      <span></span><span></span>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 
-<div class="mobile" id="mobileMenu" hidden>
-  <nav class="mobile__nav" aria-label="Mobile">
-    <a href="#difference">Why SERHANT.</a>
-    <a href="#work">Sellers &amp; Buyers</a>
-    <a href="#marketing">Marketing</a>
-    <a href="#listings">Listings</a>
-    <a href="#about">About</a>
-    <a href="#faq">FAQ</a>
-    <a class="btn" href="#contact">Let's Talk</a>
-  </nav>
+<div class="drawer" id="drawer" hidden>
+  <a href="#team">The Team</a>
+  <a href="#sell-buy">Sell Your Home</a>
+  <a href="#sell-buy" data-path="buy">Buy a Home</a>
+  <a href="#listings">Listings</a>
+  <a href="#areas">Areas We Serve</a>
+  <a href="clientele.html">Clientele Portal</a>
+  <a href="#faq">FAQ</a>
+  <a class="btn btn--accent" href="#contact">Get in touch</a>
 </div>
 
 <main id="main">
@@ -73,557 +65,473 @@
 
 <!-- ============================ HERO ============================ -->
 <section class="hero">
-  <div class="hero__grid" aria-hidden="true"></div>
-  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="hero__aurora" aria-hidden="true"></div>
+  <div class="hero__mesh" aria-hidden="true"></div>
 
-  <div class="hero__inner wrap">
-    <p class="eyebrow reveal">New York · Licensed Real Estate Salesperson</p>
-    <h1 class="hero__h1 reveal">
-      More eyes<br>on your home.<br>
-      More leverage<br>on your deal.
-    </h1>
-    <p class="hero__sub reveal">
-      I represent buyers and sellers under SERHANT. — the most-followed real estate
-      brand in the world. A media company that happens to sell real estate, built to
-      put your property in front of an audience no traditional brokerage can reach.
-    </p>
-    <div class="hero__cta reveal">
-      <a class="btn" href="#sellers" data-tab-jump="sellers">I'm Selling</a>
-      <a class="btn btn--ghost" href="#buyers" data-tab-jump="buyers">I'm Buying</a>
+  <div class="wrap hero__inner">
+    <div>
+      <p class="eyebrow eyebrow--light">Monmouth · Middlesex · Central New Jersey</p>
+      <h1>Four agents.<br>One team.<br><span class="serif">Every detail handled.</span></h1>
+      <p class="hero__sub">
+        The Ison Group sells New Jersey homes with strategic marketing, sharp pricing and
+        hard negotiation — and gives every client a private portal to watch it happen in
+        real time.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--accent" href="#contact" data-intent="Selling">
+          What's my home worth <span class="btn__arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="btn btn--ghost-light" href="#sell-buy" data-path="buy">Start your search</a>
+      </div>
+
+      <!-- VERIFY: figures below are from public agent profiles. Confirm and update. -->
+      <div class="hero__trust">
+        <div><b data-count="257" data-suffix="+">0</b><span>Homes sold</span></div>
+        <div><b data-count="675" data-prefix="$" data-suffix="K">0</b><span>Average sale price</span></div>
+        <div><b data-count="9" data-suffix=" yrs">0</b><span>Leading the market</span></div>
+      </div>
     </div>
-  </div>
 
-  <a class="hero__scroll" href="#difference" aria-label="Scroll to content">
-    <span>Scroll</span><i aria-hidden="true"></i>
-  </a>
+    <!-- The portal is the differentiator, so it leads visually -->
+    <aside class="hero__card" aria-label="Client portal preview">
+      <h3>12 Sycamore Court</h3>
+      <p>Your sale · Updated this morning</p>
+      <ol class="track">
+        <li class="done"><span class="dot" aria-hidden="true"></span><span>Photos &amp; film</span><span class="when">Mar 4</span></li>
+        <li class="done"><span class="dot" aria-hidden="true"></span><span>Live on market</span><span class="when">Mar 7</span></li>
+        <li class="now"><span class="dot" aria-hidden="true"></span><span><b>Showings &amp; feedback</b></span><span class="when">14 booked</span></li>
+        <li class="todo"><span class="dot" aria-hidden="true"></span><span>Offers review</span><span class="when">—</span></li>
+        <li class="todo"><span class="dot" aria-hidden="true"></span><span>Under contract</span><span class="when">—</span></li>
+      </ol>
+      <p style="margin:18px 0 0"><a class="chip" style="color:#fff;border-color:rgba(255,255,255,.35)" href="clientele.html">Open the portal →</a></p>
+    </aside>
+  </div>
 </section>
 
-<!-- ============================ MARQUEE ============================ -->
-<div class="marquee" aria-hidden="true">
-  <div class="marquee__track">
-    <span>In-House Studios</span><span class="sep">•</span>
-    <span>Media-First Marketing</span><span class="sep">•</span>
-    <span>Global Referral Network</span><span class="sep">•</span>
-    <span>Data-Driven Pricing</span><span class="sep">•</span>
-    <span>Off-Market Access</span><span class="sep">•</span>
-    <span>White-Glove Service</span><span class="sep">•</span>
-    <span>In-House Studios</span><span class="sep">•</span>
-    <span>Media-First Marketing</span><span class="sep">•</span>
-    <span>Global Referral Network</span><span class="sep">•</span>
-    <span>Data-Driven Pricing</span><span class="sep">•</span>
-    <span>Off-Market Access</span><span class="sep">•</span>
-    <span>White-Glove Service</span><span class="sep">•</span>
+<!-- ============================ STAT BAND ============================ -->
+<div class="band">
+  <div class="wrap band__inner">
+    <div class="s rv"><b>$117K–$2M</b><span>Price range served</span></div>
+    <div class="s rv rv-d1"><b>Monmouth</b><span>Home market</span></div>
+    <div class="s rv rv-d2"><b>Middlesex</b><span>&amp; surrounding counties</span></div>
+    <div class="s rv rv-d3"><b>7 days</b><span>Typical time to launch</span></div>
   </div>
 </div>
 
-<!-- ============================ STATS ============================
-     VERIFY every figure below against the current SERHANT. brand
-     deck before presenting. Edit the number in data-count and the
-     prefix/suffix spans.
+<!-- ============================ TEAM ============================
+     EDIT: confirm each photo is matched to the right person, add
+     last names for Jonathan and Dora, and swap in real bios,
+     phone numbers and license numbers.
      ============================================================ -->
-<section class="stats" aria-label="By the numbers">
-  <div class="wrap stats__grid">
-    <div class="stat reveal">
-      <div class="stat__num"><span class="hash">#</span><span class="c" data-count="1">0</span></div>
-      <p class="stat__label">Most-followed real estate brand in the world</p>
-    </div>
-    <div class="stat reveal">
-      <div class="stat__num"><span class="c" data-count="1.5" data-decimals="1">0</span>B<span class="plus">+</span></div>
-      <p class="stat__label">Content views generated annually</p>
-    </div>
-    <div class="stat reveal">
-      <div class="stat__num"><span class="c" data-count="40">0</span><span class="plus">+</span></div>
-      <p class="stat__label">Markets served nationwide and abroad</p>
-    </div>
-    <div class="stat reveal">
-      <div class="stat__num">24<span class="slash">/</span>7</div>
-      <p class="stat__label">In-house production, media &amp; support</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============================ DIFFERENCE ============================ -->
-<section class="section section--paper" id="difference">
+<section class="sec" id="team">
   <div class="wrap">
-    <div class="sechead reveal">
-      <p class="eyebrow eyebrow--dark">01 — The Difference</p>
-      <h2 class="h2">Every brokerage lists.<br>We <em>broadcast</em>.</h2>
+    <div class="sechead rv">
+      <p class="eyebrow">The Team</p>
+      <h2 class="h2">You get all four of us.</h2>
       <p class="lede">
-        Most agents put a sign in the yard and a listing on the MLS, then wait. That's
-        distribution from 1998. SERHANT. was built the other way around: an audience
-        first, a brokerage second — so your property launches into demand that already
-        exists.
+        A team is only worth something if the whole bench shows up. Every client works
+        directly with the agent they hire — backed by three others who know the file,
+        so nothing waits on one person's calendar.
       </p>
     </div>
 
-    <div class="cards">
-      <article class="card reveal">
-        <span class="card__no">01</span>
-        <h3>An audience, already assembled</h3>
-        <p>Your home isn't waiting to be discovered. It's released to a following that
-           tunes in daily for real estate — across film, social, email and press.</p>
+    <div class="team">
+      <article class="member rv">
+        <div class="member__photo">
+          <img src="assets/img/team/ron-ison.jpg" alt="Ron Ison" loading="lazy" width="490" height="684">
+          <div class="member__tag"><b>Ron Ison</b><span>Team Leader</span></div>
+        </div>
+        <div class="member__body">
+          <p>Brooklyn born, Hofstra business grad, and a financial advisor for 19 years before
+             real estate. He reads a housing market the way he read the business cycle — which
+             is why his pricing lands.</p>
+          <div class="member__links">
+            <a class="chip" href="tel:+15551234567">Call</a>
+            <a class="chip" href="mailto:ron@theisongroup.com">Email</a>
+          </div>
+        </div>
       </article>
-      <article class="card reveal">
-        <span class="card__no">02</span>
-        <h3>A studio, not a photographer</h3>
-        <p>In-house production means cinematic film, editorial stills, floor plans and
-           copy created by one team, on one schedule, to one standard.</p>
+
+      <article class="member rv rv-d1">
+        <div class="member__photo">
+          <img src="assets/img/team/melanie-nannetti.jpg" alt="Melanie Nannetti" loading="lazy" width="480" height="668">
+          <div class="member__tag"><b>Melanie Nannetti</b><span>Sales Associate</span></div>
+        </div>
+        <div class="member__body">
+          <p>Add your bio here — two or three sentences. Lead with who you work with best and
+             the neighborhoods you know cold, then one detail that makes you memorable.</p>
+          <div class="member__links">
+            <a class="chip" href="tel:+15551234567">Call</a>
+            <a class="chip" href="mailto:melanienannetti@serhant.com">Email</a>
+          </div>
+        </div>
       </article>
-      <article class="card reveal">
-        <span class="card__no">03</span>
-        <h3>Pricing backed by evidence</h3>
-        <p>Comparable sales, absorption rates, days-on-market curves and live buyer
-           behavior — so we price to create competition, not to chase the market down.</p>
+
+      <article class="member rv rv-d2">
+        <div class="member__photo">
+          <img src="assets/img/team/jonathan.jpg" alt="Jonathan" loading="lazy" width="364" height="528">
+          <div class="member__tag"><b>Jonathan</b><span>Sales Associate</span></div>
+        </div>
+        <div class="member__body">
+          <p>Add Jonathan's bio here. What he specializes in, how long he's been licensed, and
+             what clients say about working with him.</p>
+          <div class="member__links">
+            <a class="chip" href="tel:+15551234567">Call</a>
+            <a class="chip" href="mailto:jonathan@theisongroup.com">Email</a>
+          </div>
+        </div>
       </article>
-      <article class="card reveal">
-        <span class="card__no">04</span>
-        <h3>One point of contact</h3>
-        <p>You work with me. The machine works behind me. Nothing gets handed to an
-           assistant you've never met at the moment it matters most.</p>
+
+      <article class="member rv rv-d3">
+        <div class="member__photo">
+          <img src="assets/img/team/dora.jpg" alt="Dora" loading="lazy" width="462" height="672">
+          <div class="member__tag"><b>Dora</b><span>Sales Associate</span></div>
+        </div>
+        <div class="member__body">
+          <p>Add Dora's bio here. What she specializes in, the markets she covers, and the kind
+             of client she's best for.</p>
+          <div class="member__links">
+            <a class="chip" href="tel:+15551234567">Call</a>
+            <a class="chip" href="mailto:dora@theisongroup.com">Email</a>
+          </div>
+        </div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ============================ SELLERS / BUYERS ============================ -->
-<section class="section section--ink" id="work">
+<!-- ============================ SELL / BUY ============================ -->
+<section class="sec sec--tint" id="sell-buy">
   <div class="wrap">
-    <div class="sechead reveal">
-      <p class="eyebrow">02 — How We Work</p>
-      <h2 class="h2">Two sides.<br>One standard.</h2>
+    <div class="sechead rv">
+      <p class="eyebrow">How we work</p>
+      <h2 class="h2">Two jobs. Two plans.</h2>
+      <p class="lede">No mystery, no "trust me." Here is the actual sequence, and what we
+        handle at each step.</p>
     </div>
 
-    <div class="tabs reveal" role="tablist" aria-label="Choose your path">
-      <button class="tab is-active" id="tab-sellers" role="tab" aria-selected="true" aria-controls="sellers" data-tab="sellers">For Sellers</button>
-      <button class="tab" id="tab-buyers" role="tab" aria-selected="false" aria-controls="buyers" data-tab="buyers">For Buyers</button>
-      <span class="tabs__ink" aria-hidden="true"></span>
-    </div>
+    <div class="paths">
+      <article class="path path--sell rv" id="sell">
+        <h3>Selling</h3>
+        <p>Priced on evidence, marketed like a launch, negotiated to the last dollar.</p>
+        <ol class="path__steps">
+          <li><i>01</i><div><b>Valuation &amp; strategy</b><span>Full CMA and three pricing scenarios with your net proceeds on each.</span></div></li>
+          <li><i>02</i><div><b>Prep that pays back</b><span>A punch list of what returns more than it costs — and what to skip.</span></div></li>
+          <li><i>03</i><div><b>Photo, film &amp; floor plans</b><span>Your home packaged properly before a single buyer sees it.</span></div></li>
+          <li><i>04</i><div><b>Launch &amp; showings</b><span>MLS, syndication, social and direct agent outreach, all in one week.</span></div></li>
+          <li><i>05</i><div><b>Offers &amp; close</b><span>Every offer stress-tested for price, financing and certainty to close.</span></div></li>
+        </ol>
+        <a class="btn btn--ghost-light" href="#contact" data-intent="Selling">Request a valuation</a>
+      </article>
 
-    <!-- ---------- SELLERS ---------- -->
-    <div class="panel is-active" id="sellers" role="tabpanel" aria-labelledby="tab-sellers" tabindex="0">
-      <div class="panel__head">
-        <h3 class="h3">Your home deserves an audience,<br>not a listing.</h3>
-        <p class="lede">
-          The goal is never "sold." The goal is sold for the highest number the market
-          will bear, on the terms you want, in the window you need. Here's exactly how
-          we get there.
-        </p>
-      </div>
-
-      <ol class="steps">
-        <li class="step reveal">
-          <span class="step__no">01</span>
-          <h4>Strategy &amp; Valuation</h4>
-          <p>A walk-through, a full comparative market analysis, and a candid number.
-             We model three pricing scenarios and what each one does to your net proceeds
-             and timeline.</p>
-        </li>
-        <li class="step reveal">
-          <span class="step__no">02</span>
-          <h4>Prep, Staging &amp; Punch List</h4>
-          <p>A prioritized list of what returns more than it costs — and what to skip.
-             Vendor coordination, staging and pre-market repairs handled on your behalf.</p>
-        </li>
-        <li class="step reveal">
-          <span class="step__no">03</span>
-          <h4>Production</h4>
-          <p>Cinematic film, editorial photography, drone, floor plans, 3D tour and
-             written narrative. Your property is packaged like a product launch.</p>
-        </li>
-        <li class="step reveal">
-          <span class="step__no">04</span>
-          <h4>Launch &amp; Amplification</h4>
-          <p>Coordinated release across MLS and syndication, brand social, paid targeting,
-             agent-to-agent outreach, email to a qualified buyer base, and press where
-             the story warrants it.</p>
-        </li>
-        <li class="step reveal">
-          <span class="step__no">05</span>
-          <h4>Negotiation &amp; Close</h4>
-          <p>Every offer stress-tested for price, financing strength and certainty to
-             close. Then a managed path through inspection, appraisal and title — with
-             weekly reporting until keys change hands.</p>
-        </li>
-      </ol>
-
-      <div class="callout reveal">
-        <div>
-          <p class="eyebrow">Free, no obligation</p>
-          <h4 class="callout__h">Find out what your home is actually worth.</h4>
-          <p class="callout__p">A full valuation with three pricing scenarios and a net-proceeds
-             estimate — delivered within 48 hours of the walk-through.</p>
-        </div>
-        <a class="btn" href="#contact" data-prefill="Selling">Request a Valuation</a>
-      </div>
-    </div>
-
-    <!-- ---------- BUYERS ---------- -->
-    <div class="panel" id="buyers" role="tabpanel" aria-labelledby="tab-buyers" tabindex="0" hidden>
-      <div class="panel__head">
-        <h3 class="h3">Buy with information,<br>not adrenaline.</h3>
-        <p class="lede">
-          The best deal is rarely the loudest listing. My job is to widen what you see,
-          sharpen what you know, and make sure you never overpay out of urgency.
-        </p>
-      </div>
-
-      <ol class="steps">
-        <li class="step reveal">
-          <span class="step__no">01</span>
-          <h4>Discovery &amp; Financing</h4>
-          <p>We define non-negotiables, nice-to-haves and true budget. Introductions to
-             lenders who actually close — pre-approval in hand before we tour.</p>
-        </li>
-        <li class="step reveal">
-          <span class="step__no">02</span>
-          <h4>Curated Search</h4>
-          <p>On-market, coming-soon, and quietly off-market inventory through the SERHANT.
-             agent network. You see a short list worth your time, not an inbox of noise.</p>
-        </li>
-        <li class="step reveal">
-          <span class="step__no">03</span>
-          <h4>Tour &amp; Diligence</h4>
-          <p>Every showing followed by the unglamorous work: comps, taxes, assessments,
-             building financials, flood and permit history, and what the block looks like
-             in five years.</p>
-        </li>
-        <li class="step reveal">
-          <span class="step__no">04</span>
-          <h4>Offer &amp; Negotiation</h4>
-          <p>An offer built to win on structure, not just price — with a walk-away number
-             set before emotion enters the room.</p>
-        </li>
-        <li class="step reveal">
-          <span class="step__no">05</span>
-          <h4>Contract to Keys</h4>
-          <p>Inspection, appraisal, attorney review, board package where applicable, and
-             a final walk-through. A single timeline you can actually read.</p>
-        </li>
-      </ol>
-
-      <div class="callout reveal">
-        <div>
-          <p class="eyebrow">Buyer consultation</p>
-          <h4 class="callout__h">See what's available before everyone else does.</h4>
-          <p class="callout__p">A 30-minute call to map your search, your financing and the
-             inventory — including what hasn't hit the market yet.</p>
-        </div>
-        <a class="btn" href="#contact" data-prefill="Buying">Start Your Search</a>
-      </div>
+      <article class="path rv rv-d1" id="buy">
+        <h3>Buying</h3>
+        <p>More inventory, better information, and an offer built to win on structure.</p>
+        <ol class="path__steps">
+          <li><i>01</i><div><b>Budget &amp; financing</b><span>Lenders who actually close. Pre-approval in hand before we tour.</span></div></li>
+          <li><i>02</i><div><b>A real short list</b><span>On-market, coming-soon and quiet listings — not an inbox of noise.</span></div></li>
+          <li><i>03</i><div><b>Tours &amp; diligence</b><span>Comps, taxes, permits, flood history and what the block looks like in five years.</span></div></li>
+          <li><i>04</i><div><b>Offer &amp; negotiation</b><span>A walk-away number set before emotion enters the room.</span></div></li>
+          <li><i>05</i><div><b>Contract to keys</b><span>Attorney review, inspection, appraisal and final walk-through on one timeline.</span></div></li>
+        </ol>
+        <a class="btn" href="#contact" data-intent="Buying">Start your search</a>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ============================ MARKETING ============================ -->
-<section class="section section--paper" id="marketing">
-  <div class="wrap">
-    <div class="sechead reveal">
-      <p class="eyebrow eyebrow--dark">03 — The Marketing Engine</p>
-      <h2 class="h2">What your listing gets.<br>All of it. Every time.</h2>
+<!-- ============================ PORTAL PROMO ============================ -->
+<section class="sec sec--navy" id="portal">
+  <div class="wrap promo">
+    <div class="rv">
+      <p class="eyebrow eyebrow--light">Clientele</p>
+      <h2 class="h2">Stop wondering what's happening with your deal.</h2>
       <p class="lede">
-        No packages, no upsells, no "premium tier." Every property I represent receives
-        the full production and distribution program.
+        Every Ison Group client gets a private login. Sellers watch their sale move stage by
+        stage. Buyers see every showing on the calendar and where each offer stands.
       </p>
+      <ul class="checks">
+        <li><span class="tick" aria-hidden="true">✓</span><span><b>Live sale tracker</b> — photos, launch, showings, offers, contract, closing.</span></li>
+        <li><span class="tick" aria-hidden="true">✓</span><span><b>Showing calendar</b> — every appointment, confirmed or pending, in one place.</span></li>
+        <li><span class="tick" aria-hidden="true">✓</span><span><b>Real feedback</b> — what buyers actually said after each walkthrough.</span></li>
+        <li><span class="tick" aria-hidden="true">✓</span><span><b>Documents</b> — contracts, disclosures and inspection reports, always findable.</span></li>
+      </ul>
+      <a class="btn btn--accent" href="clientele.html">Open the clientele portal <span class="btn__arrow" aria-hidden="true">→</span></a>
     </div>
 
-    <ul class="grid-list">
-      <li class="reveal"><strong>Cinematic property film</strong><span>Scripted, scored and edited for social and web.</span></li>
-      <li class="reveal"><strong>Editorial photography</strong><span>Day and twilight, styled and retouched.</span></li>
-      <li class="reveal"><strong>Aerial &amp; drone</strong><span>Context, grounds and neighborhood.</span></li>
-      <li class="reveal"><strong>Floor plans &amp; 3D tour</strong><span>Measured plans plus a walkable virtual tour.</span></li>
-      <li class="reveal"><strong>Dedicated property page</strong><span>Its own address, built to convert.</span></li>
-      <li class="reveal"><strong>Paid social campaign</strong><span>Targeted to buyer profiles and feeder markets.</span></li>
-      <li class="reveal"><strong>Brand distribution</strong><span>Released through SERHANT. channels and audience.</span></li>
-      <li class="reveal"><strong>Agent-to-agent outreach</strong><span>Direct to brokers with matching buyers.</span></li>
-      <li class="reveal"><strong>Email to buyer base</strong><span>Segmented, tracked and followed up.</span></li>
-      <li class="reveal"><strong>Print &amp; collateral</strong><span>Brochures, mailers and signage on brand.</span></li>
-      <li class="reveal"><strong>Open house program</strong><span>Broker preview plus public, staffed properly.</span></li>
-      <li class="reveal"><strong>Weekly reporting</strong><span>Traffic, saves, showings and feedback — in writing.</span></li>
-    </ul>
+    <div class="promo__shot rv rv-d2" aria-hidden="true">
+      <div class="promo__bar"><i></i><i></i><i></i></div>
+      <div class="promo__rows">
+        <div class="promo__row"><div><b>Offer received</b><br><span>$742,000 · 20% down · no mortgage contingency</span></div><span class="pill pill--go">New</span></div>
+        <div class="promo__row"><div><b>Showing — Sat 11:00am</b><br><span>Buyer agent: K. Alvarez, confirmed</span></div><span class="pill pill--ok">Confirmed</span></div>
+        <div class="promo__row"><div><b>Inspection scheduled</b><br><span>Tue 9:00am · 3 hrs · access via lockbox</span></div><span class="pill pill--wait">Upcoming</span></div>
+        <div class="promo__row"><div><b>Feedback — 9 Birchwood</b><br><span>"Loved the kitchen, worried about the street."</span></div><span class="pill pill--go">Read</span></div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ============================ LISTINGS ============================
-     Drop photos at assets/img/listing-01.jpg … listing-03.jpg
-     (1600x1200 or larger). If a file is missing the card falls back
-     to a branded panel automatically — nothing breaks.
+     EDIT: replace with real listings. Add photos to assets/img/ and
+     point each <img src> at them.
      ============================================================ -->
-<section class="section section--ink" id="listings">
+<section class="sec" id="listings">
   <div class="wrap">
-    <div class="sechead sechead--row reveal">
+    <div class="sechead sechead--split rv">
       <div>
-        <p class="eyebrow">04 — Portfolio</p>
-        <h2 class="h2">Recent &amp; featured</h2>
+        <p class="eyebrow">Portfolio</p>
+        <h2 class="h2">Recent &amp; available</h2>
       </div>
-      <a class="link" href="#contact">Inquire about availability →</a>
+      <a class="btn btn--line" href="#contact">Ask about a property</a>
     </div>
 
     <div class="listings">
-      <article class="listing reveal">
-        <div class="listing__media">
-          <img src="assets/img/listing-01.jpg" alt="Featured property exterior" loading="lazy" onerror="this.parentNode.classList.add('is-empty');this.remove()">
-          <span class="listing__badge">Sold</span>
-        </div>
-        <div class="listing__body">
-          <h3>123 Example Street</h3>
-          <p class="listing__meta">Neighborhood, City · 3 BD · 2.5 BA · 2,400 SF</p>
-          <p class="listing__price">$0,000,000</p>
+      <article class="lst rv">
+        <div class="lst__media"><span class="lst__badge lst__badge--sold">Sold</span></div>
+        <div class="lst__body">
+          <p class="lst__price">$0,000,000</p>
+          <p class="lst__addr">123 Example Road, Holmdel</p>
+          <p class="lst__meta"><span>4 bd</span><span>2.5 ba</span><span>2,600 sf</span></p>
         </div>
       </article>
+      <article class="lst rv rv-d1">
+        <div class="lst__media"><span class="lst__badge lst__badge--pend">Under contract</span></div>
+        <div class="lst__body">
+          <p class="lst__price">$0,000,000</p>
+          <p class="lst__addr">456 Example Lane, Marlboro</p>
+          <p class="lst__meta"><span>3 bd</span><span>2 ba</span><span>1,850 sf</span></p>
+        </div>
+      </article>
+      <article class="lst rv rv-d2">
+        <div class="lst__media"><span class="lst__badge">For sale</span></div>
+        <div class="lst__body">
+          <p class="lst__price">$0,000,000</p>
+          <p class="lst__addr">789 Example Drive, Colts Neck</p>
+          <p class="lst__meta"><span>5 bd</span><span>3.5 ba</span><span>3,400 sf</span></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-      <article class="listing reveal">
-        <div class="listing__media">
-          <img src="assets/img/listing-02.jpg" alt="Featured property interior" loading="lazy" onerror="this.parentNode.classList.add('is-empty');this.remove()">
-          <span class="listing__badge">In Contract</span>
-        </div>
-        <div class="listing__body">
-          <h3>456 Example Avenue</h3>
-          <p class="listing__meta">Neighborhood, City · 2 BD · 2 BA · 1,150 SF</p>
-          <p class="listing__price">$0,000,000</p>
-        </div>
-      </article>
-
-      <article class="listing reveal">
-        <div class="listing__media">
-          <img src="assets/img/listing-03.jpg" alt="Featured property view" loading="lazy" onerror="this.parentNode.classList.add('is-empty');this.remove()">
-          <span class="listing__badge">Available</span>
-        </div>
-        <div class="listing__body">
-          <h3>789 Example Boulevard</h3>
-          <p class="listing__meta">Neighborhood, City · 4 BD · 3 BA · 3,100 SF</p>
-          <p class="listing__price">$0,000,000</p>
-        </div>
-      </article>
+<!-- ============================ AREAS ============================ -->
+<section class="sec sec--tint" id="areas">
+  <div class="wrap">
+    <div class="sechead rv">
+      <p class="eyebrow">Where we work</p>
+      <h2 class="h2">Central New Jersey, known street by street.</h2>
+      <p class="lede">EDIT: trim this list to the towns you actually want leads from.</p>
+    </div>
+    <div class="areas rv">
+      <a href="#contact">Holmdel</a><a href="#contact">Colts Neck</a><a href="#contact">Marlboro</a>
+      <a href="#contact">Freehold</a><a href="#contact">Middletown</a><a href="#contact">Manalapan</a>
+      <a href="#contact">Hazlet</a><a href="#contact">Matawan</a><a href="#contact">Aberdeen</a>
+      <a href="#contact">Old Bridge</a><a href="#contact">Red Bank</a><a href="#contact">Rumson</a>
+      <a href="#contact">Little Silver</a><a href="#contact">Tinton Falls</a><a href="#contact">Howell</a>
+      <a href="#contact">East Brunswick</a><a href="#contact">Edison</a><a href="#contact">Monroe</a>
     </div>
   </div>
 </section>
 
 <!-- ============================ TESTIMONIALS ============================ -->
-<section class="section section--paper" id="testimonials">
+<section class="sec" id="reviews">
   <div class="wrap">
-    <div class="sechead reveal">
-      <p class="eyebrow eyebrow--dark">05 — In Their Words</p>
-      <h2 class="h2">Clients on the record</h2>
+    <div class="sechead rv">
+      <p class="eyebrow">Clients</p>
+      <h2 class="h2">On the record</h2>
     </div>
-
     <div class="quotes">
-      <figure class="quote reveal">
-        <blockquote>Replace this with a real client testimonial. Keep it to two or three
-          sentences, and lead with the outcome — the number of offers, the days on market,
-          the problem that got solved.</blockquote>
-        <figcaption><strong>Client Name</strong><span>Seller · Neighborhood</span></figcaption>
+      <figure class="q rv">
+        <div class="q__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>Replace with a real review. Lead with the outcome — offers received, days on
+          market, the problem that got solved.</blockquote>
+        <figcaption><b>Client Name</b>Seller · Holmdel</figcaption>
       </figure>
-      <figure class="quote reveal">
-        <blockquote>Replace this with a real client testimonial. Buyer stories land hardest
-          when they name the thing that was hard — the competition, the timeline, the
-          out-of-state move — and how it was handled.</blockquote>
-        <figcaption><strong>Client Name</strong><span>Buyer · Neighborhood</span></figcaption>
+      <figure class="q rv rv-d1">
+        <div class="q__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>Replace with a real review. Buyer stories land hardest when they name what
+          was hard and how it got handled.</blockquote>
+        <figcaption><b>Client Name</b>Buyer · Marlboro</figcaption>
       </figure>
-      <figure class="quote reveal">
-        <blockquote>Replace this with a real client testimonial. A third voice from a
-          different price point or property type shows range.</blockquote>
-        <figcaption><strong>Client Name</strong><span>Seller · Neighborhood</span></figcaption>
+      <figure class="q rv rv-d2">
+        <div class="q__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>Replace with a real review from a different price point, so the range shows.</blockquote>
+        <figcaption><b>Client Name</b>Seller · Middletown</figcaption>
       </figure>
-    </div>
-  </div>
-</section>
-
-<!-- ============================ ABOUT ============================ -->
-<section class="section section--ink" id="about">
-  <div class="wrap about">
-    <div class="about__media reveal">
-      <img src="assets/img/melanie.jpg" alt="Melanie Nannetti" loading="lazy" onerror="this.parentNode.classList.add('is-empty');this.remove()">
-    </div>
-    <div class="about__body reveal">
-      <p class="eyebrow">06 — About</p>
-      <h2 class="h2">Melanie<br>Nannetti</h2>
-      <p class="lede">
-        Licensed Real Estate Salesperson · SERHANT.
-      </p>
-      <p>
-        Replace this paragraph with your story. Two short paragraphs is the right length.
-        Start with why you do this work and who you do it for — first-time buyers,
-        downsizers, investors, a specific set of neighborhoods. Specificity is what makes
-        a stranger trust you.
-      </p>
-      <p>
-        Use the second paragraph for proof: years in the business, volume closed, markets
-        you know cold, languages you speak, designations you hold. Then close on what a
-        client can expect from working with you — availability, candor, and a plan they
-        can read.
-      </p>
-      <ul class="creds">
-        <li><strong>Markets</strong><span>Add your neighborhoods</span></li>
-        <li><strong>Specialties</strong><span>Add your focus areas</span></li>
-        <li><strong>License</strong><span>Add your license #</span></li>
-        <li><strong>Languages</strong><span>Add languages</span></li>
-      </ul>
     </div>
   </div>
 </section>
 
 <!-- ============================ FAQ ============================ -->
-<section class="section section--paper" id="faq">
+<section class="sec sec--tint" id="faq">
   <div class="wrap">
-    <div class="sechead reveal">
-      <p class="eyebrow eyebrow--dark">07 — Questions</p>
-      <h2 class="h2">The things people<br>actually ask</h2>
+    <div class="sechead rv">
+      <p class="eyebrow">Questions</p>
+      <h2 class="h2">What people actually ask</h2>
     </div>
-
-    <div class="faq">
-      <details class="reveal">
+    <div class="faq rv">
+      <details>
         <summary>What does it cost to sell with you?</summary>
-        <div><p>Commission is negotiable and agreed in writing before your home goes on the
-          market. I'll walk you through the full cost of sale — commission, transfer taxes,
-          attorney and closing fees — and give you an estimated net-proceeds figure so
-          there are no surprises at the table.</p></div>
+        <div><p>Commission is negotiable and agreed in writing before your home goes on the market.
+          You'll get a full cost-of-sale breakdown — commission, transfer fees, attorney and closing
+          costs — with an estimated net-proceeds figure, so there are no surprises at the table.</p></div>
       </details>
-      <details class="reveal">
-        <summary>How long will it take to sell?</summary>
-        <div><p>It depends on price, condition and season. At our first meeting I'll show you
-          current days-on-market for comparable homes in your area and model what each
-          pricing scenario is likely to do to that timeline.</p></div>
+      <details>
+        <summary>How fast can you get my home on the market?</summary>
+        <div><p>Typically about a week from signed agreement to live listing — that covers prep,
+          photography, floor plans, copy and MLS entry. If you need faster, say so and we'll tell
+          you honestly what we can compress.</p></div>
       </details>
-      <details class="reveal">
-        <summary>Should I renovate before listing?</summary>
-        <div><p>Usually not much. I'll give you a prioritized punch list of what returns more
-          than it costs — typically paint, lighting, landscaping and decluttering — and tell
-          you plainly which projects you will not get your money back on.</p></div>
+      <details>
+        <summary>Do I need to renovate before listing?</summary>
+        <div><p>Usually not much. We'll give you a prioritized list of what returns more than it
+          costs — typically paint, lighting, landscaping and decluttering — and tell you plainly
+          which projects you won't get your money back on.</p></div>
       </details>
-      <details class="reveal">
-        <summary>Does a buyer pay me anything?</summary>
-        <div><p>We'll sign a written buyer agreement that states exactly how I'm compensated
-          and by whom before we tour a single property. Seller-paid compensation is
-          negotiable on every transaction, and I'll tell you where it stands on each home
-          we see.</p></div>
+      <details>
+        <summary>As a buyer, what do I pay you?</summary>
+        <div><p>We sign a written buyer agreement stating exactly how we're compensated and by whom
+          before touring a single home. Seller-paid compensation is negotiable on every deal, and
+          we'll tell you where it stands on each property.</p></div>
       </details>
-      <details class="reveal">
-        <summary>How much do I need for a down payment?</summary>
-        <div><p>Less than most people assume. Programs range from 3% conventional to 0% for
-          qualifying VA buyers, plus down-payment assistance in many areas. I'll connect you
-          with lenders who will map the real options against your numbers.</p></div>
+      <details>
+        <summary>Can I buy and sell at the same time?</summary>
+        <div><p>Yes, and it's a large part of what we do. We build one timeline covering both sides
+          — contingency structure, bridge options, rent-back — so you're never forced into a bad
+          offer or a rushed purchase.</p></div>
       </details>
-      <details class="reveal">
-        <summary>I'm buying and selling at the same time. Can that work?</summary>
-        <div><p>Yes, and it's most of what I do. We build one timeline covering both sides —
-          including contingency structure, bridge options and rent-back — so you're never
-          forced to accept a bad offer or make a rushed purchase.</p></div>
+      <details>
+        <summary>How do I get into the clientele portal?</summary>
+        <div><p>Once you sign with us, we send you a login. Sellers get a live tracker of their sale;
+          buyers get their showing calendar and offer status. It updates as we work, so you're not
+          waiting on a phone call to know where things stand.</p></div>
       </details>
     </div>
   </div>
 </section>
 
 <!-- ============================ CONTACT ============================ -->
-<section class="section section--ink contact" id="contact">
-  <div class="wrap contact__grid">
-    <div class="contact__intro reveal">
-      <p class="eyebrow">08 — Next Step</p>
-      <h2 class="h2">Let's talk about<br>your move.</h2>
-      <p class="lede">
-        No pressure, no pitch. A conversation about what you own, what you want, and
-        whether the timing works. If it doesn't, I'll tell you that too.
-      </p>
+<section class="sec sec--navy" id="contact">
+  <div class="wrap contact">
+    <div class="rv">
+      <p class="eyebrow eyebrow--light">Next step</p>
+      <h2 class="h2">Let's talk about your move.</h2>
+      <p class="lede">Tell us what you're thinking about. We'll come back within one business
+        day with a straight answer — including if the timing isn't right.</p>
       <ul class="contact__list">
-        <!-- EDIT: your real phone, email and office -->
+        <!-- EDIT: real office phone, email and address -->
         <li><span>Phone</span><a href="tel:+15551234567">(555) 123-4567</a></li>
-        <li><span>Email</span><a href="mailto:melanienannetti@serhant.com">melanienannetti@serhant.com</a></li>
-        <li><span>Office</span><a href="https://serhant.com" target="_blank" rel="noopener">SERHANT. · serhant.com</a></li>
+        <li><span>Email</span><a href="mailto:info@theisongroup.com">info@theisongroup.com</a></li>
+        <li><span>Office</span><a href="#contact">Holmdel, New Jersey</a></li>
       </ul>
     </div>
 
-    <form class="form reveal" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="company">
-      <input type="hidden" name="form-name" value="contact">
-      <p class="hp"><label>Do not fill this out <input name="company" tabindex="-1" autocomplete="off"></label></p>
+    <div class="card-form rv rv-d1">
+      <form class="form" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="company">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hp"><label>Leave blank <input name="company" tabindex="-1" autocomplete="off"></label></p>
 
-      <div class="field">
-        <label for="f-name">Name</label>
-        <input id="f-name" name="name" type="text" required autocomplete="name" placeholder="First and last">
-      </div>
-      <div class="field-row">
+        <div class="field">
+          <label id="intent-label">I want to</label>
+          <div class="seg" role="radiogroup" aria-labelledby="intent-label">
+            <input type="radio" name="intent" id="i-sell" value="Selling" checked>
+            <label for="i-sell">Sell</label>
+            <input type="radio" name="intent" id="i-buy" value="Buying">
+            <label for="i-buy">Buy</label>
+            <input type="radio" name="intent" id="i-both" value="Both">
+            <label for="i-both">Both</label>
+          </div>
+        </div>
+
+        <div class="frow">
+          <div class="field">
+            <label for="f-name">Name</label>
+            <input id="f-name" name="name" type="text" required autocomplete="name" placeholder="First and last">
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone</label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="(555) 555-5555">
+          </div>
+        </div>
+
         <div class="field">
           <label for="f-email">Email</label>
           <input id="f-email" name="email" type="email" required autocomplete="email" placeholder="you@email.com">
         </div>
-        <div class="field">
-          <label for="f-phone">Phone</label>
-          <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="(555) 555-5555">
-        </div>
-      </div>
-      <div class="field">
-        <label for="f-intent">I'm interested in</label>
-        <select id="f-intent" name="intent">
-          <option>Selling</option>
-          <option>Buying</option>
-          <option>Buying and selling</option>
-          <option>Investing</option>
-          <option>Just exploring</option>
-        </select>
-      </div>
-      <div class="field-row">
-        <div class="field">
-          <label for="f-where">Property address or area</label>
-          <input id="f-where" name="location" type="text" placeholder="Address or neighborhood">
-        </div>
-        <div class="field">
-          <label for="f-when">Timeline</label>
-          <select id="f-when" name="timeline">
-            <option>Ready now</option>
-            <option>1–3 months</option>
-            <option>3–6 months</option>
-            <option>6–12 months</option>
-            <option>Still researching</option>
-          </select>
-        </div>
-      </div>
-      <div class="field">
-        <label for="f-msg">Anything I should know?</label>
-        <textarea id="f-msg" name="message" rows="4" placeholder="Optional"></textarea>
-      </div>
 
-      <button class="btn btn--block" type="submit">Send</button>
-      <p class="form__note">By submitting, you agree to be contacted about your inquiry.
-        You can opt out at any time.</p>
-      <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
-    </form>
+        <div class="frow">
+          <div class="field">
+            <label for="f-where">Address or town</label>
+            <input id="f-where" name="location" type="text" placeholder="e.g. Holmdel">
+          </div>
+          <div class="field">
+            <label for="f-when">Timeline</label>
+            <select id="f-when" name="timeline">
+              <option>Ready now</option>
+              <option>1–3 months</option>
+              <option>3–6 months</option>
+              <option>6–12 months</option>
+              <option>Just researching</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="f-msg">Anything we should know?</label>
+          <textarea id="f-msg" name="message" rows="3" placeholder="Optional"></textarea>
+        </div>
+
+        <button class="btn btn--accent btn--block" type="submit">Send</button>
+        <p class="form__note">By submitting you agree to be contacted about your inquiry. You can
+          opt out any time.</p>
+        <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
   </div>
 </section>
 </main>
 
 <!-- ============================ FOOTER ============================ -->
-<footer class="footer">
+<footer class="ftr">
   <div class="wrap">
-    <div class="footer__top">
-      <a class="lockup lockup--lg" href="#top">
-        <span class="lockup__brand">SERHANT<span class="dot">.</span></span>
-      </a>
-      <nav class="footer__nav" aria-label="Footer">
-        <a href="#difference">Why SERHANT.</a>
-        <a href="#work">Sellers &amp; Buyers</a>
-        <a href="#marketing">Marketing</a>
-        <a href="#listings">Listings</a>
-        <a href="#about">About</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <div class="ftr__top">
+      <div class="ftr__brand">
+        <a class="ftr__logo" href="#top"><img src="assets/img/logo-white.png" alt="The Ison Group" width="582" height="106"></a>
+        <p>Strategic marketing, sharp pricing and strong negotiation across Monmouth, Middlesex
+           and surrounding counties.</p>
+        <p class="eho">⌂ Equal Housing Opportunity</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <nav class="ftr__links" aria-label="Footer">
+          <a href="#team">The Team</a>
+          <a href="#sell">Selling</a>
+          <a href="#buy">Buying</a>
+          <a href="#listings">Listings</a>
+          <a href="#areas">Areas</a>
+        </nav>
+      </div>
+      <div>
+        <h4>Clients</h4>
+        <nav class="ftr__links" aria-label="Client links">
+          <a href="clientele.html">Clientele Portal</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </div>
 
-    <p class="footer__tag">It's a great day to be great.</p>
-
-    <div class="footer__legal">
+    <div class="ftr__legal">
       <p>
-        <strong>Melanie Nannetti</strong> · Licensed Real Estate Salesperson ·
-        <a href="https://serhant.com" target="_blank" rel="noopener">SERHANT.</a>
+        <!-- EDIT: confirm the brokerage name, office address and license
+             numbers with your broker before this goes live. -->
+        The Ison Group · Licensed Real Estate Salespersons, State of New Jersey.
+        All information is from sources deemed reliable but is subject to errors, omissions,
+        changes in price, prior sale or withdrawal without notice. No representation is made
+        as to the accuracy of any description. All measurements and square footages are
+        approximate. This is not intended to solicit property already listed.
       </p>
-      <p>
-        <!-- EDIT: confirm the correct brokerage entity, address and license
-             disclosure for your state before publishing. -->
-        SERHANT. is a licensed real estate broker. All information is from sources deemed
-        reliable but is subject to errors, omissions, changes in price, prior sale or
-        withdrawal without notice. No representation is made as to the accuracy of any
-        description. All measurements and square footages are approximate. This is not
-        intended to solicit property already listed. Equal Housing Opportunity.
-      </p>
-      <p class="footer__copy">&copy; <span id="year">2026</span> Melanie Nannetti. All rights reserved.</p>
+      <p>&copy; <span id="year">2026</span> The Ison Group. All rights reserved.</p>
     </div>
   </div>
 </footer>

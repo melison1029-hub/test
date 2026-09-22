@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Clientele Portal · The Ison Group</title>
+<meta name="description" content="Private client portal — track your home sale stage by stage, or follow your showings and offers as a buyer.">
+<meta name="theme-color" content="#0A0B3F">
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/portal.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body class="portal">
+<a class="skip" href="#portalMain">Skip to content</a>
+
+<!-- ============================================================
+     DEMO NOTICE — remove once a real backend is connected.
+     See README: "Making the portal real".
+     ============================================================ -->
+<p class="demo-bar" id="demoBar">
+  <b>Demo portal.</b> Sample data only — no real client information is stored here.
+</p>
+
+<!-- ============================ SIGN IN ============================ -->
+<section class="signin" id="signin">
+  <div class="signin__aurora" aria-hidden="true"></div>
+
+  <div class="signin__card">
+    <img class="mark" src="assets/img/logo-navy.png" alt="The Ison Group" width="582" height="106">
+    <h1>Client sign in</h1>
+    <p>Track your sale, your showings and your paperwork in one place.</p>
+
+    <form id="signinForm" novalidate>
+      <div class="field">
+        <label for="p-email">Email</label>
+        <input id="p-email" name="email" type="email" autocomplete="username" placeholder="you@email.com" required>
+      </div>
+      <div class="field">
+        <label for="p-pass">Password</label>
+        <input id="p-pass" name="password" type="password" autocomplete="current-password" placeholder="••••••••" required>
+      </div>
+      <button class="btn btn--accent btn--block" type="submit">Sign in</button>
+      <p class="signin__err" id="signinErr" role="alert"></p>
+    </form>
+
+    <div class="signin__demo">
+      <h2>Demo logins</h2>
+      <div class="demo-keys">
+        <button class="demo-key" type="button" data-fill="seller">
+          <span><b>Seller view</b><span>seller@demo.com · demo1234</span></span>
+          <i>Use →</i>
+        </button>
+        <button class="demo-key" type="button" data-fill="buyer">
+          <span><b>Buyer view</b><span>buyer@demo.com · demo1234</span></span>
+          <i>Use →</i>
+        </button>
+      </div>
+      <a class="signin__back" href="index.html">← Back to the main site</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ APP ============================ -->
+<div class="app" id="app">
+  <header class="appbar">
+    <div class="appbar__in">
+      <a href="index.html" aria-label="The Ison Group, home">
+        <img class="mark" src="assets/img/logo-white.png" alt="The Ison Group" width="582" height="106">
+      </a>
+      <div class="appbar__who">
+        <span class="avatar" id="avatar" aria-hidden="true">–</span>
+        <span class="who-text">Signed in as <b id="whoName">—</b></span>
+        <button class="linkbtn" id="signout" type="button">Sign out</button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="tabbar" aria-label="Portal sections">
+    <div class="tabbar__in" role="tablist" id="tabbar"></div>
+  </nav>
+
+  <main class="appmain" id="portalMain"></main>
+</div>
+
+<script src="assets/js/portal.js" defer></script>
+</body>
+</html>

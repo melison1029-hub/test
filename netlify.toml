@@ -1,7 +1,6 @@
-# Deploying to Netlify? Drag this folder onto app.netlify.com/drop, or
-# connect the repo. The contact form is picked up automatically via the
-# data-netlify attribute on <form> in index.html — submissions appear
-# under Site configuration > Forms.
+# Netlify deploy config. Drag this folder onto app.netlify.com/drop or connect
+# the repo. The contact form is picked up automatically from the data-netlify
+# attribute in index.html — submissions appear under Site configuration > Forms.
 
 [build]
   publish = "."
@@ -12,6 +11,12 @@
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# The demo portal must never be indexed.
+[[headers]]
+  for = "/clientele.html"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
 
 [[headers]]
   for = "/assets/*"

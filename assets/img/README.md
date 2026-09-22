@@ -1,22 +1,15 @@
 # Images
 
-Drop files here with these exact names and the site picks them up. If a file
-is missing, the page falls back to a branded panel automatically — nothing
-looks broken, so you can present before every photo is ready.
+`logo-navy.png` and `logo-white.png` are knockouts generated from the logo you
+supplied — navy for light backgrounds, white for dark. `team/` holds the four
+headshots.
 
-| Filename          | Used for                | Recommended size        |
-|-------------------|-------------------------|-------------------------|
-| `melanie.jpg`     | About section portrait  | 1200 × 1500 (4:5 crop)  |
-| `listing-01.jpg`  | Featured property 1     | 1600 × 1200 (4:3 crop)  |
-| `listing-02.jpg`  | Featured property 2     | 1600 × 1200 (4:3 crop)  |
-| `listing-03.jpg`  | Featured property 3     | 1600 × 1200 (4:3 crop)  |
-| `og-cover.jpg`    | Link preview when shared| 1200 × 630              |
+The headshots came from screenshots, so they top out around 500px wide. They're
+sharp at the size the cards use, but if you have the original files, drop them in
+at the same names for better quality on large screens.
 
-Tips:
+Listing photos aren't in yet. Add them here and point the `<img src>` in the
+Listings section of `index.html` at them — 1600 × 1200 or larger, JPEG at 70–80%
+quality, under ~400KB each so the page stays fast on a phone.
 
-- Export at 70–80% JPEG quality. Keep each file under ~400 KB so the page
-  stays fast on a phone at an open house.
-- The portrait is rendered in black and white by CSS, so a color original
-  is fine.
-- Use photography you have the rights to. Listing photos are typically
-  owned by the photographer or the listing brokerage.
+For link previews when the site is shared, add `og-cover.jpg` at 1200 × 630.
