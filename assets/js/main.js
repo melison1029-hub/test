@@ -63,6 +63,36 @@
     });
   });
 
+  /* ---------- Hero parallax ----------
+     The three house layers drift at different rates as you scroll, which is
+     what sells the depth. Transform only, so it stays on the compositor.
+  ------------------------------------------------------------------ */
+  var layers = [
+    { el: $('.sky--far'),  rate: 0.18 },
+    { el: $('.sky--mid'),  rate: 0.11 },
+    { el: $('.sky--near'), rate: 0.04 }
+  ].filter(function (l) { return l.el; });
+
+  if (layers.length && !reduced) {
+    var ticking = false;
+    var park = function () {
+      var y = window.scrollY;
+      // Once the hero is off screen there is nothing to move.
+      if (y < window.innerHeight * 1.2) {
+        layers.forEach(function (l) {
+          l.el.style.transform = 'translate3d(0,' + (y * l.rate).toFixed(1) + 'px,0)';
+        });
+      }
+      ticking = false;
+    };
+    window.addEventListener('scroll', function () {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(park);
+    }, { passive: true });
+    park();
+  }
+
   /* ---------- Scroll reveal ---------- */
   var items = $$('.rv');
   if (reduced || !('IntersectionObserver' in window)) {
