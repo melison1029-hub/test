@@ -57,7 +57,7 @@
     renderer.setClearAlpha(0);
 
     var scene = new THREE.Scene();
-    scene.fog = new THREE.Fog(NAVY, 110, 290);
+    scene.fog = new THREE.Fog(NAVY, 100, 260);
 
     var camera = new THREE.PerspectiveCamera(34, 1, 1, 600);
 
@@ -70,7 +70,7 @@
     /* ---------- Ground and streets ---------- */
     var LOT = 13, GRID = 9, SPAN = LOT * GRID;
     var ground = new THREE.Mesh(
-      new THREE.PlaneGeometry(SPAN * 2.6, SPAN * 2.6),
+      new THREE.PlaneGeometry(SPAN * 6, SPAN * 6),
       new THREE.MeshLambertMaterial({ color: 0x0C1042 })
     );
     ground.rotation.x = -Math.PI / 2;
@@ -244,10 +244,10 @@
       mouse.x += (aim.x - mouse.x) * 0.045;
       mouse.y += (aim.y - mouse.y) * 0.045;
 
-      var radius = 152;
+      var radius = 150;
       camera.position.set(
         Math.cos(angle) * radius + mouse.x * 9,
-        86 + Math.sin(angle * 0.7) * 6 - mouse.y * 6,
+        120 + Math.sin(angle * 0.7) * 7 - mouse.y * 6,
         Math.sin(angle) * radius
       );
       camera.lookAt(target);

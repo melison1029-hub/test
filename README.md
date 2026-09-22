@@ -1,8 +1,14 @@
 # The Ison Group — team site + clientele portal
 
-A static site for The Ison Group (Ron Ison, Melanie Nannetti, Jonathan and Dora),
-built in the brand navy sampled from the logotype (`#121373`). No build step, no
-framework, no dependencies.
+A static site for The Ison Group (Ron Ison, Melanie Nannetti, Dora and Jonathan),
+powered by SERHANT. Built in the brand navy sampled from the logotype
+(`#121373` — SERHANT.'s own mark reads `#131176`, near identical). No build step,
+no framework, no dependencies.
+
+Both logos exist as transparent knockouts in two inks: `logo-white.png` /
+`serhant-white.png` for dark grounds, `logo-navy.png` / `serhant-navy.png` for
+light ones. The "powered by" lockup appears in the hero, the footer and the
+portal sign-in.
 
 ```
 index.html              main site
