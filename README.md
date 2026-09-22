@@ -23,34 +23,26 @@ Open `index.html` in a browser, or run a local server:
 python3 -m http.server 8000     # http://localhost:8000
 ```
 
-## ⚠ Confirm this first
-
-**The team photos are matched to names by my best guess.** Ron is the photo in
-the black suit and tie; Jonathan is the one in the black blazer and white v-neck.
-If that's backwards, swap the two files in `assets/img/team/` — nothing else
-needs to change.
-
 ## Edit checklist
 
 Everything below is marked in the code with `EDIT:` or `VERIFY`.
 
-1. **Photo names** — see above.
-2. **Last names** — Jonathan and Dora are first-name only in `index.html` and in
+1. **Last names** — Jonathan and Dora are first-name only in `index.html` and in
    `TEAM` at the top of `assets/js/portal.js`.
-3. **Bios** — Ron's is drafted from his public profile; the other three are
+2. **Bios** — Ron's is drafted from his public profile; the other three are
    placeholders.
-4. **Stats** — `257+ homes sold`, `$675K average`, `9 years` come from public
+3. **Stats** — `257+ homes sold`, `$675K average`, `9 years` come from public
    agent profiles, not from you. Confirm or replace them.
-5. **Brokerage** — the footer says "Licensed Real Estate Salespersons, State of
+4. **Brokerage** — the footer says "Licensed Real Estate Salespersons, State of
    New Jersey." Public sources show both Keller Williams Central Monmouth and
    SERHANT. associated with the team, so set the correct current brokerage,
    office address and license numbers with your broker.
-6. **Phone and email** — every number is `(555) 123-4567` right now. Also update
+5. **Phone and email** — every number is `(555) 123-4567` right now. Also update
    `MAILTO` near the bottom of `assets/js/main.js`.
-7. **Listings** — three placeholder cards. Add photos and point each `<img>` at
+6. **Listings** — three placeholder cards. Add photos and point each `<img>` at
    them.
-8. **Towns** — trim the Areas list to where you actually want leads.
-9. **Reviews** — three placeholder testimonials.
+7. **Towns** — trim the Areas list to where you actually want leads.
+8. **Reviews** — three placeholder testimonials.
 
 ## The clientele portal
 

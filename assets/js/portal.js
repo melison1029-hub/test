@@ -23,10 +23,10 @@
   };
 
   var TEAM = [
-    { name: 'Ron Ison',        role: 'Team Leader',     img: 'assets/img/team/ron-ison.jpg',        tel: '+15551234567' },
+    { name: 'Ron Ison',         role: 'Team Leader',     img: 'assets/img/team/ron-ison.jpg',         tel: '+15551234567' },
     { name: 'Melanie Nannetti', role: 'Sales Associate', img: 'assets/img/team/melanie-nannetti.jpg', tel: '+15551234567' },
-    { name: 'Jonathan',        role: 'Sales Associate', img: 'assets/img/team/jonathan.jpg',        tel: '+15551234567' },
-    { name: 'Dora',            role: 'Sales Associate', img: 'assets/img/team/dora.jpg',            tel: '+15551234567' }
+    { name: 'Dora',             role: 'Sales Associate', img: 'assets/img/team/dora.jpg',             tel: '+15551234567' },
+    { name: 'Jonathan',         role: 'Sales Associate', img: 'assets/img/team/jonathan.jpg',         tel: '+15551234567' }
   ];
 
   /* ---------- Sample data (demo only) ---------- */
