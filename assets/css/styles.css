@@ -273,7 +273,7 @@ h1 + .lede,h2 + .lede,.h1 + .lede,.h2 + .lede{margin-top:18px}
 @keyframes pinFloat{from{transform:translateY(0)}to{transform:translateY(-9px)}}
 
 /* Keeps headline and body text off the rooftops. */
-.hero__scrim{position:absolute;inset:0;z-index:1;pointer-events:none;
+.hero__scrim{position:absolute;inset:0;z-index:2;pointer-events:none;
   background:linear-gradient(105deg,rgba(10,11,63,.92) 0%,rgba(10,11,63,.72) 38%,
                              rgba(10,11,63,.12) 62%,transparent 78%)}
 .hero__ground{position:absolute;left:0;right:0;bottom:0;height:1px;z-index:2;pointer-events:none;
@@ -284,9 +284,17 @@ h1 + .lede,h2 + .lede,.h1 + .lede,.h2 + .lede{margin-top:18px}
   .hero__scrim{background:linear-gradient(180deg,rgba(10,11,63,.9) 0%,rgba(10,11,63,.75) 55%,
                                           rgba(10,11,63,.25) 100%)}
 }
+/* WebGL upgrade. The drawn scene holds the frame until this is ready,
+   then the two crossfade. If WebGL never loads, nothing changes. */
+.scene3d{position:absolute;inset:0;z-index:1;width:100%;height:100%;display:block;
+  pointer-events:none;opacity:0;transition:opacity 1.1s var(--ease)}
+.hero.has-3d .scene3d{opacity:1}
+.hero.has-3d .scene{opacity:0;transition:opacity .9s var(--ease)}
+
 @media (prefers-reduced-motion:reduce){
   .sky__lit rect{animation:none;opacity:.85}
   .sky__pin{animation:none}
+  .scene3d{display:none}
 }
 
 /* ============================================================
