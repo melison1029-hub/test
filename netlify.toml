@@ -1,0 +1,19 @@
+# Deploying to Netlify? Drag this folder onto app.netlify.com/drop, or
+# connect the repo. The contact form is picked up automatically via the
+# data-netlify attribute on <form> in index.html — submissions appear
+# under Site configuration > Forms.
+
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
