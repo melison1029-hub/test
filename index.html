@@ -281,10 +281,8 @@
 </section>
 
 <!-- ============================ LISTINGS ============================
-     EDIT: address, price, specs and the description below are
-     placeholders. To add another property, copy the whole
-     <article class="feature"> block and point the images at new
-     files in assets/img/listings/.
+     EDIT: replace with real listings. Add photos to assets/img/ and
+     point each <img src> at them.
      ============================================================ -->
 <section class="sec" id="listings">
   <div class="wrap">
@@ -296,61 +294,32 @@
       <a class="btn btn--line" href="#contact">Ask about a property</a>
     </div>
 
-    <article class="feature rv">
-      <figure class="feature__hero">
-        <button class="shot" type="button" data-gallery="0" aria-label="Open photo 1 of 5, exterior at twilight">
-          <img src="assets/img/listings/exterior.jpg" alt="Exterior of the home at twilight"
-               width="1200" height="800" loading="lazy">
-        </button>
-        <span class="feature__badge">For sale</span>
-      </figure>
-
-      <div class="feature__body">
-        <div class="feature__head">
-          <div>
-            <p class="feature__price">$0,000,000</p>
-            <h3 class="feature__addr">5 Example Street, Town</h3>
-          </div>
-          <ul class="feature__specs">
-            <li><b>0</b><span>Beds</span></li>
-            <li><b>0</b><span>Baths</span></li>
-            <li><b>0,000</b><span>Sq ft</span></li>
-            <li><b>2026</b><span>Built</span></li>
-          </ul>
+    <div class="listings">
+      <article class="lst rv">
+        <div class="lst__media"><span class="lst__badge lst__badge--sold">Sold</span></div>
+        <div class="lst__body">
+          <p class="lst__price">$0,000,000</p>
+          <p class="lst__addr">123 Example Road, Holmdel</p>
+          <p class="lst__meta"><span>4 bd</span><span>2.5 ba</span><span>2,600 sf</span></p>
         </div>
-
-        <p class="feature__copy">
-          EDIT: two or three lines about this home. Lead with what a buyer notices
-          first — new construction, the open great room, the primary bath — then the
-          practical detail that closes it: the block, the schools, the commute.
-        </p>
-
-        <div class="feature__grid">
-          <button class="shot" type="button" data-gallery="1" aria-label="Open photo 2 of 5, kitchen and great room">
-            <img src="assets/img/listings/great-room-sm.jpg" alt="Open great room with fireplace and kitchen beyond"
-                 width="900" height="600" loading="lazy">
-          </button>
-          <button class="shot" type="button" data-gallery="2" aria-label="Open photo 3 of 5, kitchen">
-            <img src="assets/img/listings/kitchen-sm.jpg" alt="Kitchen with quartz counters and brass hardware"
-                 width="900" height="600" loading="lazy">
-          </button>
-          <button class="shot" type="button" data-gallery="3" aria-label="Open photo 4 of 5, living room">
-            <img src="assets/img/listings/living-room-sm.jpg" alt="Living room with sliding doors to the deck"
-                 width="900" height="600" loading="lazy">
-          </button>
-          <button class="shot" type="button" data-gallery="4" aria-label="Open photo 5 of 5, primary bathroom">
-            <img src="assets/img/listings/primary-bath-sm.jpg" alt="Primary bathroom in marble with a glass shower"
-                 width="900" height="600" loading="lazy">
-            <span class="shot__more">View all 5</span>
-          </button>
+      </article>
+      <article class="lst rv rv-d1">
+        <div class="lst__media"><span class="lst__badge lst__badge--pend">Under contract</span></div>
+        <div class="lst__body">
+          <p class="lst__price">$0,000,000</p>
+          <p class="lst__addr">456 Example Lane, Marlboro</p>
+          <p class="lst__meta"><span>3 bd</span><span>2 ba</span><span>1,850 sf</span></p>
         </div>
-
-        <div class="feature__cta">
-          <a class="btn" href="#contact" data-intent="Buying">Book a showing</a>
-          <a class="btn btn--line" href="#contact">Request the full details</a>
+      </article>
+      <article class="lst rv rv-d2">
+        <div class="lst__media"><span class="lst__badge">For sale</span></div>
+        <div class="lst__body">
+          <p class="lst__price">$0,000,000</p>
+          <p class="lst__addr">789 Example Drive, Colts Neck</p>
+          <p class="lst__meta"><span>5 bd</span><span>3.5 ba</span><span>3,400 sf</span></p>
         </div>
-      </div>
-    </article>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -575,19 +544,6 @@
     </div>
   </div>
 </footer>
-
-<!-- Photo viewer -->
-<div class="lightbox" id="lightbox" hidden>
-  <div class="lightbox__ui">
-    <button class="lightbox__close" id="lbClose" type="button" aria-label="Close photos">&times;</button>
-    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" type="button" aria-label="Previous photo">&#8249;</button>
-    <button class="lightbox__nav lightbox__nav--next" id="lbNext" type="button" aria-label="Next photo">&#8250;</button>
-  </div>
-  <figure class="lightbox__stage">
-    <img id="lbImg" src="" alt="">
-    <figcaption id="lbCap"></figcaption>
-  </figure>
-</div>
 
 <script src="assets/js/main.js" defer></script>
 <script src="assets/js/scene3d.js" defer></script>
