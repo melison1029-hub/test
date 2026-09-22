@@ -152,6 +152,76 @@
     sections.forEach(function (s) { so.observe(s); });
   }
 
+  /* ---------- Photo lightbox ----------
+     Every listing photo is a <button>, so this works with a mouse, a
+     finger or a keyboard. Escape closes, arrows move, focus returns to
+     the photo you opened from.
+  ------------------------------------------------------------------ */
+  var GALLERY = [
+    { src: 'assets/img/listings/exterior.jpg',     cap: 'Exterior at twilight' },
+    { src: 'assets/img/listings/great-room.jpg',   cap: 'Great room with fireplace, kitchen beyond' },
+    { src: 'assets/img/listings/kitchen.jpg',      cap: 'Kitchen' },
+    { src: 'assets/img/listings/living-room.jpg',  cap: 'Living room, sliders to the deck' },
+    { src: 'assets/img/listings/primary-bath.jpg', cap: 'Primary bathroom' }
+  ];
+
+  var lb = $('#lightbox'), lbImg = $('#lbImg'), lbCap = $('#lbCap');
+  var shots = $$('.shot');
+  var lbIndex = 0, lastFocus = null;
+
+  function show(i) {
+    lbIndex = (i + GALLERY.length) % GALLERY.length;
+    var item = GALLERY[lbIndex];
+    lbImg.src = item.src;
+    lbImg.alt = item.cap;
+    lbCap.textContent = item.cap + '  ·  ' + (lbIndex + 1) + ' of ' + GALLERY.length;
+  }
+
+  function openLb(i, from) {
+    if (!lb) return;
+    lastFocus = from || document.activeElement;
+    show(i);
+    lb.hidden = false;
+    document.body.style.overflow = 'hidden';
+    $('#lbClose').focus();
+  }
+
+  function closeLb() {
+    if (!lb || lb.hidden) return;
+    lb.hidden = true;
+    document.body.style.overflow = '';
+    if (lastFocus) lastFocus.focus();
+  }
+
+  shots.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      openLb(parseInt(btn.dataset.gallery, 10) || 0, btn);
+    });
+  });
+
+  if (lb) {
+    $('#lbClose').addEventListener('click', closeLb);
+    $('#lbPrev').addEventListener('click', function () { show(lbIndex - 1); });
+    $('#lbNext').addEventListener('click', function () { show(lbIndex + 1); });
+    lb.addEventListener('click', function (e) {
+      // Clicking the backdrop closes; clicking the photo or a control does not.
+      if (e.target === lb || e.target.classList.contains('lightbox__stage')) closeLb();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (lb.hidden) return;
+      if (e.key === 'Escape') { closeLb(); return; }
+      if (e.key === 'ArrowRight') { e.preventDefault(); show(lbIndex + 1); }
+      if (e.key === 'ArrowLeft')  { e.preventDefault(); show(lbIndex - 1); }
+      if (e.key === 'Tab') {
+        // Keep focus inside the viewer while it is open.
+        var f = $$('button', lb);
+        var first = f[0], last = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
+    });
+  }
+
   /* ---------- Contact form ----------
      Posts to Netlify Forms when hosted there. Anywhere else the POST
      is refused, so we open a pre-filled email rather than drop a lead.

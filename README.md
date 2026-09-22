@@ -14,7 +14,7 @@ assets/js/portal.js     portal sign-in, dashboards, sample data
 assets/js/scene3d.js    optional WebGL hero scene
 assets/vendor/          Three.js r149 (self-hosted, no CDN)
 tools/build-skyline.py  regenerates the drawn neighborhood
-assets/img/             logo (navy + white knockout) and team photos
+assets/img/             logo, team photos, listing photos
 netlify.toml            optional deploy config
 ```
 
@@ -42,8 +42,11 @@ Everything below is marked in the code with `EDIT:` or `VERIFY`.
    office address and license numbers with your broker.
 5. **Phone and email** — every number is `(555) 123-4567` right now. Also update
    `MAILTO` near the bottom of `assets/js/main.js`.
-6. **Listings** — three placeholder cards. Add photos and point each `<img>` at
-   them.
+6. **Listing details** — the featured property has real photos but placeholder
+   price, address, beds, baths, square footage and description. Those five photos
+   carry a visible `©2026 MOREMLS` watermark; swap in unwatermarked originals from
+   the listing brokerage before this goes public, and confirm you have the right
+   to display them.
 7. **Towns** — trim the Areas list to where you actually want leads.
 8. **Reviews** — three placeholder testimonials.
 
